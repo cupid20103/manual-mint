@@ -10,8 +10,8 @@ contract TestToken is ERC20 {
 
     constructor() ERC20("TestToken", "TTT") {
         owner = msg.sender;
-        _tokenPrice = 0.001 ether; // Set the token price to 0.001 ETH/BNB/Matic
-        _tokenTotalSupply = 10000 * (10 ** uint256(decimals())); // Set the total supply to 10000 tokens
+        _tokenPrice = 0.001 ether;
+        _tokenTotalSupply = 10000 * (10 ** uint256(decimals()));
         _mint(owner, _tokenTotalSupply);
     }
 
